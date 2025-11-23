@@ -1,0 +1,140 @@
+body{
+    margin:0;
+}
+#header{
+    background-color: rgb(247, 94, 94);
+    padding:10px;
+    font-family:sans-serif;
+}
+
+.book{
+    background-color:black;
+    color:white;
+    width:350px;
+    height:350px;
+    border-radius: 20px;
+    margin-left:10px;
+    margin-top:50px;
+    display:inline-block;
+
+}
+
+.book .titlesamp{
+    padding:10px;
+}
+
+.book .authorsamp{
+    padding:10px;
+}
+
+.book .contentsamp{
+    padding:10px;
+    
+}
+
+.book .deletesamp{
+    padding:5px;
+    background-color:rgb(247, 94, 94);
+    margin-left:10;
+    border-radius: 5px;
+    cursor:pointer;
+    border:0;
+
+}
+
+#add{
+    position:fixed;
+    right:0;
+    bottom:0;
+    background-color: rgb(247, 94, 94);
+    border-radius:100px;
+    width:60px;
+    height:60px;
+    font-size: 30px;
+    cursor: pointer;
+    border:0;
+
+    transition-duration: 1000ms;
+
+}
+
+#add:hover{
+    width:100px;
+    height:100px;
+    font-size: 50px;
+}
+
+#hideForpop{
+    height:100%;
+    width:100%;
+    background-color:black;
+    position:absolute;
+    top:0;
+    z-index: 98;
+    opacity: 80%;
+    display:none;
+}
+
+#popUp{
+    border-style:solid;
+    width:450px;
+    height:400px;
+    padding:20px;
+    border-radius: 30px;
+    position:absolute;
+    top:150px;
+    left:450px;
+    background-color:rgb(247, 94, 94);
+    z-index:99;
+    border:0;
+    display:none;
+}
+
+#popUp #title{
+    position:relative;
+    width:250px;
+    top:10px;
+    border-radius: 10px;
+    padding:10px;
+    height:40px;
+    border:0;
+
+}
+
+#popUp #author{
+    position:relative;
+    top:20px;
+    width:250px;
+    border-radius: 10px;
+    font-size:small;
+    padding:10px;
+    height:40px;
+    border:0;
+
+}
+
+#popUp #content{
+    width:450px;
+    position:relative;
+    height:150px;
+    top:40px;
+    border-radius: 10px;
+    font-size: medium;
+    padding:10px;
+}
+
+#popUp #addInPop,#popUp #cancelInPop{
+    position:relative;
+    top:60px;
+    padding:10px;
+    background-color: black;
+    color:white;
+    border:0;
+
+}
+
+#popUP #addInPop,#cancelInPop:hover{
+    cursor:pointer;
+}
+
+
