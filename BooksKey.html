@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>BooksKey</title>
+        <link rel="stylesheet" href="Css/style.css">
+    </head>
+    <body>
+        <h1 id="header">BooksKey</h1>
+
+        <div class="book">
+            <h2 class="titlesamp">Sonnet 18</h2>
+            <b class="authorsamp">William Shakespeare</b>
+            <p class="contentsamp">“Shall I compare thee to a summer’s day?
+Thou art more lovely and more temperate.
+Rough winds do shake the darling buds of May,
+And summer’s lease hath all too short a date.”</p>
+            <button class="deletesamp" onclick="">Delete</button>
+        </div>
+
+        <button id="add" onclick="funcAdd()">+</button>
+
+        <div id="popUp">
+
+            <h2>ADD BOOK</h2>
+            <input type="text" placeholder="Title" id="title"><br>
+            <input type="text" placeholder="Author" id="author">
+            <textarea rows="15" cols="80" placeholder="Content" id="content"></textarea><br>
+            <button id="addInPop" onclick="funcAddCon()">ADD</button>
+            <button id="cancelInPop" onclick="funcCancelInPop()">CANCEL</button>
+
+        </div>
+
+        <div id="hideForpop"></div>
+        
+        <!--Java Script-->
+        <script src="JS/script.js"></script>
+    </body>
+</html>
